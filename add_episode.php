@@ -28,7 +28,7 @@ require 'inc/header.php';
         </select>
     </div>
     <div class="form-group input-group-lg">
-        <label class="control-label" for="title">Tite</label>
+        <label class="control-label" for="title">Title</label>
         <input class="form-control" type="text" name="title" id="title" required />
     </div>
 
