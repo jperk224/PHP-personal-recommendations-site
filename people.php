@@ -23,7 +23,8 @@ if ($csvFileHandler) {
     // loop through the remaining lines in the csv file to display the contacts
     echo '<div class="row">';   // the loop is inside the 'row' div so there's always at least one row
     $count = 0;
-    while (!feof($csvFileHandler)) {
+    while (!feof($csvFileHandler)) {    // FIXME: this has a bug wherein the last 'newline' in the csv is
+                                        // rendered in the UI as an empty card.
         // grab each contact (i.e. line in file) and render attributes in the UI
         // we need a new row for every 4 contacts to ensure proper UI layout
         $contact = fgetcsv($csvFileHandler);
