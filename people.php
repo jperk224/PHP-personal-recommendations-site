@@ -26,12 +26,12 @@ if ($csvFileHandler) {
     while (!feof($csvFileHandler)) {
         // grab each contact (i.e. line in file) and render attributes in the UI
         // we need a new row for every 4 contacts to ensure proper UI layout
+        $contact = fgetcsv($csvFileHandler);
         if (($count > 0) && ($count % 4 == 0)) {
-            echo '</div>\n';
+            echo '</div>';
             echo '<div class="row">';
         }
         $count++;
-        $contact = fgetcsv($csvFileHandler); 
         echo '<div class="col-xs-6 col-md-3">';
         echo '<div class="thumbnail">';
         echo '<img src="' . $contact[$img] . '" />';
