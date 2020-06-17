@@ -110,6 +110,17 @@
                 "isbn": "020161622X",
                 "average_rating": "4.31",
                 "book_published": "1999"
+            },
+            {
+                "title": "Refactoring to Collections",
+                "link": "https://www.goodreads.com/book/show/30238532-refactoring-to-collections",
+                "book_image_url": "https://images.gr-assets.com/books/1401432508s/4099.jpg",
+                "book_description": "Learn how to use collection pipelines to break down ugly, complex functions into a series of simple transformations, free of loops, complex conditionals, and temporary variables.",
+                "num_pages": "153",
+                "author_name": "Adam Wathan",
+                "isbn": "",
+                "average_rating": "",
+                "book_published": "2016"
             }
         ]
     }
